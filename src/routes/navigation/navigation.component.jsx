@@ -1,18 +1,21 @@
-import "./navigation.styles.jsx";
-import { Outlet, Link } from "react-router-dom";
-import { Fragment, useContext } from "react";
-import { ReactComponent as CrwnLogo } from "../../../assets/crown.svg";
-import { UserContext } from "../../contexts/user.context";
-import { signOutUser } from "../../../util/firebase/firebase.util";
-import CartIcon from "../../cart-icon/cart-icon.component";
-import CartDropdown from "../../cart-dropdown/cart-dropdown.component";
-import { CartContext } from "../../contexts/cart.context";
+import { Fragment, useContext } from 'react';
+import { Outlet, Link } from 'react-router-dom';
+
+import CartIcon from '../../components/cart-icon/cart-icon.component';
+import CartDropdown from '../../components/cart-dropdown/cart-dropdown.component';
+
+import { UserContext } from '../../contexts/user.context';
+import { CartContext } from '../../contexts/cart.context';
+
+import { ReactComponent as CrwnLogo } from '../../assets/crown.svg';
+import { signOutUser } from '../../utils/firebase/firebase.utils';
+
 import {
-    LogoContainer,
-    NavLinks,
-    NavLink,
-    NavigationContainer,
-} from "./navigation.styles.jsx";
+  NavigationContainer,
+  NavLinks,
+  NavLink,
+  LogoContainer,
+} from './navigation.styles';
 
 const Navigation = () => {
     const { currentUser } = useContext(UserContext);
