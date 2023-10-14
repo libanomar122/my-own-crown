@@ -21,14 +21,24 @@ import {
     getDocs,
 } from "firebase/firestore";
 
+// const firebaseConfig = {
+//     apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+//     authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+//     projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+//     storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+//     messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+//     appId: process.env.REACT_APP_FIREBASE_APP_ID,
+//     measurementId: process.env.REACT_APP_MEASUREMENT_ID,
+// };
+
 const firebaseConfig = {
-    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
-    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
-    appId: process.env.REACT_APP_FIREBASE_APP_ID,
-    measurementId: process.env.REACT_APP_MEASUREMENT_ID,
+    apiKey: 'AIzaSyC1xUgX_JPc5dmiSuu3KxM1yb1-4ISk71E',
+    authDomain: 'crown-clothing-3fde8.firebaseapp.com',
+    projectId: 'crown-clothing-3fde8',
+    storageBucket: 'crown-clothing-3fde8.appspot.com',
+    messagingSenderId: '250805692105',
+    appId: '1:250805692105:web:daf2fa7d219f3717258f18',
+    measurementId: 'G-D6021C2GQY',
 };
 
 // Initialize Firebase
