@@ -9,7 +9,7 @@ const DirectoryItem = ({ category }) => {
     const imageurl = imageUrl;
     
     return (
-        <DirectoryItemContainer>
+        <DirectoryItemContainer to={`shop/${category.title}`}>
             <BackgroundImage imageurl={imageurl} />
             <Body>
                 <h2>{title}</h2>

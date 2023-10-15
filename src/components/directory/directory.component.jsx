@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import DirectoryItem from "../directory-item/directory-item.component";
 
 import { DirectoryContainer } from "./directory.styles";
