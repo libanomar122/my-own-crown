@@ -1,19 +1,18 @@
-import { CATEGORY_ACTION_TYPES } from "./category.types";
+import { createSlice } from "@reduxjs/toolkit";
 
-export const CATEGORIES_INITIAL_STATE = {
-    categories: []
-}
+export const initialState = {
+	categories: [],
+};
 
-export const categoriesReducer = (state = CATEGORIES_INITIAL_STATE, action) => {
-    const { type, payload } = action;
+const categoriesSlice = createSlice({
+	name: "categories",
+	initialState,
+	reducers: {
+		setCategories(state, action) {
+			state.categories = action.payload;
+		},
+	},
+});
 
-    switch(type) {
-        case(CATEGORY_ACTION_TYPES.SET_CATEGORIES):
-            return {
-                ...state,
-                categories: payload
-            }
-        default:
-            return state;
-    }
-}
+export const categoriesReducer = categoriesSlice.reducer;
+export const { setCategories } = categoriesSlice.actions;
